@@ -1,19 +1,20 @@
 addEventListener("DOMContentLoaded",()=>{
-///1. en una granja se requiere saber alguna informacion para determinar el precio de venta por cada kilo de huevo. precio se determina a traves del promedio de calidad de las N gallinas que hay en la granja. La calidad de cada gallina se obtiene segun la formula  ..........calidad = (peso gallina*alturagallina)/Numero de huevos que pone
-var preciVenta 
-let ac = 0
-let n = 0
-let n1 = Number(prompt('ingrese la cantidad N de gallinas.', ))
-while(n < n1){
-    n++
-    let pesoGallinas = Number(prompt(' Ingrese el peso de la gallina '))
-    let alturaGallina = Number(prompt('Ingrese la altura de la gallina '))
-    let numerHuveos = Number(prompt('Ingrese la cantidad de huevos que pone '))
-    let calidad = (pesoGallinas*alturaGallina)/numerHuveos
-    let a = ac+=calidad
-    preciVenta = a/n1
-    console.log(`El numero de calidad de la gallina es : ${calidad}`);
-}
-console.log(`el precio de las gallinas es : ${preciVenta}`);
+    //2. Hacer un algoritmo que al ingresar 2 números por la pantalla y se calcule la suma, resta, multiplicación
+    // y división. El proceso debe terminar cuando se hallan realizado 10 procesos (Hacer uso de
+    // contadores).
+    let cont = 0
+    while (cont < 10){
+        cont++
+        let dato1 = Number(prompt('Ingrese el primer dato '))
+        let dato2 = Number(prompt('Ingrese el segundo dato '))
+        let suma = dato1+dato2
+        let resta = dato1-dato2
+        let multiplicacion = dato1*dato2
+        let divicion = dato1/dato2
+        console.log(`La suma de ${dato1} + ${dato2} = ${suma}`);
+        console.log(`La resta de ${dato1} + ${dato2} = ${resta}`);
+        console.log(`La multiplicacion de ${dato1} + ${dato2} = ${multiplicacion}`);
+        console.log(`La divicion de ${dato1} + ${dato2} = ${divicion}`);
+    }
 
 })
