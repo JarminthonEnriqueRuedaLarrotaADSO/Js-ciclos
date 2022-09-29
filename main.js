@@ -1,20 +1,23 @@
 addEventListener("DOMContentLoaded",()=>{
-    //2. Hacer un algoritmo que al ingresar 2 números por la pantalla y se calcule la suma, resta, multiplicación
-    // y división. El proceso debe terminar cuando se hallan realizado 10 procesos (Hacer uso de
-    // contadores).
-    let cont = 0
-    while (cont < 10){
-        cont++
-        let dato1 = Number(prompt('Ingrese el primer dato '))
-        let dato2 = Number(prompt('Ingrese el segundo dato '))
-        let suma = dato1+dato2
-        let resta = dato1-dato2
-        let multiplicacion = dato1*dato2
-        let divicion = dato1/dato2
-        console.log(`La suma de ${dato1} + ${dato2} = ${suma}`);
-        console.log(`La resta de ${dato1} + ${dato2} = ${resta}`);
-        console.log(`La multiplicacion de ${dato1} + ${dato2} = ${multiplicacion}`);
-        console.log(`La divicion de ${dato1} + ${dato2} = ${divicion}`);
-    }
+    // 3. Programa para solicitar el nombre, apellido, edad y la nota promedio de 5 estudiantes de un curso de
+    // computación.
+    let n = 0
+    acum = 0
+    var promedio
+    while (n<5) {
+        n++
+        let nombre = (prompt('ingrese su nombre'))
+        let apellido = (prompt('Ingrese su apellido'))
+        let edad = Number(prompt('Ingrese su edad'))
+        let nota = Number(prompt('Ingrese su nota'))
+        acum += nota
+        promedio = acum/2
+        console.log(`${nombre}`)
+        console.log(`${apellido}`)
+        console.log(`${edad}`)
+        console.log(`${nota}`)
+        console.log(`----------------------------`)
 
+    }
+console.warn(`El promedio de las notas de los estudiantes es : ${promedio}`)
 })
