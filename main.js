@@ -1,25 +1,20 @@
 addEventListener("DOMContentLoaded",()=>{
-    //5. El profesor de una materia desea conocer la cantidad de sus alumnos que no tienen derecho al examen
-    // de nivelación. Diseñe un pseudocódigo que lea las calificaciones obtenidas en las 5 unidades por cada
-    // uno de los 40 alumnos y escriba la cantidad de ellos que no tienen derecho al examen de nivelación.
-    let  n = 0
-    let nivelacion = 0
-    var promedio
-    console.warn('La nota se define segun si obtuvo mas de 3 pasa y no merece hacer el examen de lo contrario si obtuvo menos de 3 tiene que hacer el examen.');
-    while (n<50){
-        n++
-    let nota1 = Number(prompt(`Alumno ${n} Ingrese sus notas para calcular si tiene derecho a la nivelacion`))
-    let nota2 = Number(prompt(`Alumno ${n} Ingrese sus notas para calcular si tiene derecho a la nivelacion`))
-    let nota3 = Number(prompt(`Alumno ${n} Ingrese sus notas para calcular si tiene derecho a la nivelacion`))
-    let nota4 = Number(prompt(`Alumno ${n} Ingrese sus notas para calcular si tiene derecho a la nivelacion`))
-    let nota5 = Number(prompt(`Alumno ${n} Ingrese sus notas para calcular si tiene derecho a la nivelacion`))
-    nivelacion = nota1+nota2+nota3+nota4+nota5
-    promedio = nivelacion/5
-    if (promedio<3) {
-        console.log(`Alumno ${n} Tiene derecho al examen de nivelacion "ut ha perdido  :(" `)
-    }    
-    else{
-        console.log(`Alumno ${n} No tiene derecho al examen de nivelacion "ut ha pasado :) " `)
+    //6. Un avión que viaja 800 Km/hr. Dispara un proyectil auto impulsado, en el momento del disparo, el avión hace un giro de 90 grados y acelera a 20 mtrs/seg2. El proyectil sigue su curso, acelerando a 10 mtrs./seg2. Diseñe un pseudocódigo que escriba cada segundo, la distancia que separa al avión del
+    // proyectil, hasta que estén a 10,000 mtrs. o más.
+    let m = 20
+    let n = 10
+    var s = 0
+    var z = 0
+    while (n < 10001) {
+        n+=10
+        s += 1
+
     }
+    while (m < 10001) {
+        m+=20
+        z += 1
+
     }
+    console.log(`El tiempo que tarda el avion en alcanzar 10km de separacion del proyecil son "${s}" segundos`);
+    console.log(`El tiempo que tarda el proyectil en alcanzar 10km de separacion del avion son "${z}" segundos`);
 })
